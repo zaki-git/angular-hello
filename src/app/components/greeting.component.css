@@ -3,3 +3,16 @@ button
     width: 130px;
     height: 35px;
 }
+
+div
+{
+  background-color: #81b5e9;
+  border-radius: 5px;
+  padding: 5px;
+  color: beige;
+}
+
+span
+{
+  color: chocolate;
+}
