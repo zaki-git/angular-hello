@@ -1,0 +1,31 @@
+.red
+{
+    background-color: lightcoral;
+}
+
+.blue
+{
+    background-color:  lightblue;
+}
+
+.green
+{
+    background-color: lightgreen;
+}
+
+.yellow
+{
+    background-color: lightgoldenrodyellow;
+}
+
+#color-container
+{
+    margin: 10px;
+}
+
+#color-div
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
