@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'color-box',
@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
     styleUrls: ['./color.component.css']
 })
 export class ColorComponent{
-    public Color: string;
+
+    @Input() Color : string;
+
+    //public Color: string;
 
     /**
      *

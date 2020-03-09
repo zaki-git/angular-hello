@@ -7,10 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Playground';
-  public textValue = 'some text';
+  public textValue = 'write red, blue or yellow here';
+  public ColorParent : string;
 
   public SetColor() {
-    console.debug('THe text value is: ' + this.textValue);
+    console.debug('The text value is: ' + this.textValue);
+    this.ColorParent = this.textValue;
   }
 
 }
