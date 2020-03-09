@@ -1,8 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    {{ title }}!
   </h1>
   <greeting></greeting>
+  <div>
+    <input #textVal type="text" [(ngModel)]="textValue">
+    <button (click)="SetColor()">Set color</button>
+  </div>
+  
+  <color-box></color-box>
 </div>
 <router-outlet></router-outlet>
