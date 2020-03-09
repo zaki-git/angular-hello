@@ -16,5 +16,15 @@ export class GreetingComponent {
     public updateTime() : void {
         this.time = (new Date()).toLocaleTimeString();
     }
+
+
+    public ColorRed(){
+    }
+
+    public ColorBlue(){
+    }
+
+    public ColorYellow(){
+    }
 }
 
