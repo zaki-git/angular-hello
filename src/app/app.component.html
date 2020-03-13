@@ -3,9 +3,9 @@
   <h1>
     {{ title }}!
   </h1>
-  <greeting></greeting>
+  <greeting (colorEmitter)="ColorSelected($event)"></greeting> 
   <div>
-    <input #textVal type="text" [(ngModel)]="textValue">
+    <input type="text" [(ngModel)]="textValue">
     <button (click)="SetColor()">Set color</button>
   </div>
   

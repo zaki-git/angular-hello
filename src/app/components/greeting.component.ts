@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'greeting',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class GreetingComponent {
     time : any;
+    @Output() colorEmitter = new EventEmitter<string>();
 
     constructor(){
         this.time = (new Date()).toLocaleTimeString();
@@ -19,12 +20,15 @@ export class GreetingComponent {
 
 
     public ColorRed(){
+        this.colorEmitter.emit('red');
     }
 
     public ColorBlue(){
+        this.colorEmitter.emit('blue');
     }
 
     public ColorYellow(){
+        this.colorEmitter.emit('yellow');
     }
 }
 

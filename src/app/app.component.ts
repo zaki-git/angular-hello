@@ -15,6 +15,10 @@ export class AppComponent {
     this.ColorParent = this.textValue;
   }
 
+  public ColorSelected(color: string){
+    this.ColorParent = color;
+  }
+
 }
 
 
