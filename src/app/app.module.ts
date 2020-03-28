@@ -8,11 +8,12 @@ import { AppComponent } from './app.component';
 import { GreetingComponent } from './components/ComponentInteraction/greeting.component'
 import { ColorComponent } from './components/ComponentInteraction/color.component';
 import { ComponentInteraction } from './components/ComponentInteraction/component-interaction.component';
+import { LandingComponent } from './components/Greetings/landing.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, GreetingComponent, ColorComponent, ComponentInteraction
+    AppComponent, GreetingComponent, ColorComponent, ComponentInteraction, LandingComponent
   ],
   imports: [
     BrowserModule,
