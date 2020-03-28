@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { GreetingComponent } from './components/greeting.component'
-import { ColorComponent } from './components/color.component';
 import { FormsModule } from '@angular/forms';
+
+// Business components
+import { AppComponent } from './app.component';
+import { GreetingComponent } from './components/ComponentInteraction/greeting.component'
+import { ColorComponent } from './components/ComponentInteraction/color.component';
+import { ComponentInteraction } from './components/ComponentInteraction/component-interaction.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, GreetingComponent, ColorComponent
+    AppComponent, GreetingComponent, ColorComponent, ComponentInteraction
   ],
   imports: [
     BrowserModule,

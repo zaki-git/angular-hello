@@ -3,12 +3,7 @@
   <h1>
     {{ title }}!
   </h1>
-  <greeting (colorEmitter)="ColorSelected($event)"></greeting> 
-  <div>
-    <input type="text" [(ngModel)]="textValue">
-    <button (click)="SetColor()">Set color</button>
-  </div>
-  
-  <color-box [Color]="ColorParent"></color-box>
+
+  <component-interaction></component-interaction>
 </div>
 <router-outlet></router-outlet>
